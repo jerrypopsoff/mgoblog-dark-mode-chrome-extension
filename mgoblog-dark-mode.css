@@ -1,0 +1,57 @@
+body,
+.page-content,
+#block-mgoblog-content .content,
+.content,
+.pager .pager__items,
+.view-content,
+.thread-wrapper,
+#comments > .view-content,
+div.ck > .ck-editor__main > .ck-editor__editable,
+.view-primary-articles .views-row,
+.view-secondary-articles .views-row,
+.content-wrapper,
+.block,
+input.form-search,
+tr,
+tr:nth-child(2n),
+tr td,
+.comments-filter h1,
+.comment__footer > .comment__user-data {
+  background-color: #00162a !important;
+  color: #fafafa !important;
+}
+
+.views-row > .views-field-comment-count,
+.view-primary-articles .views-row .views-field-byline a,
+.view-secondary-articles .views-row .views-field-byline a,
+.sidebar .view .views-field-uid a {
+  color: #989c97 !important;
+}
+
+.page-content {
+  background-size: 0 !important;
+}
+
+#block-frontpagelogoheader > .content {
+  background-color: transparent !important;
+}
+
+#block-frontpagelogoheader a {
+  color: transparent !important;
+}
+
+a {
+  color: #fafafa !important;
+}
+
+.marker,
+.views-field-comment-count.views-field-new-comments a,
+a .marker,
+mark {
+  color: #ffcb05 !important;
+}
+
+tr td,
+tr th {
+  border-color: #333333 !important;
+}

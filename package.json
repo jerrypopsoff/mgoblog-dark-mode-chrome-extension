@@ -1,0 +1,10 @@
+{
+  "name": "mgoblog-dark-mode-chrome-extension",
+  "version": "1.0.0",
+  "description": "A Google Chrome browser extension to make MGoBlog dark.",
+  "author": "Jerry Haagsma",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

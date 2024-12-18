@@ -24,8 +24,9 @@ tr td,
 .views-row > .views-field-comment-count,
 .view-primary-articles .views-row .views-field-byline a,
 .view-secondary-articles .views-row .views-field-byline a,
-.sidebar .view .views-field-uid a {
-  color: #989c97 !important;
+.sidebar .view .views-field-uid a,
+.node__meta {
+  color: #bababa !important;
 }
 
 .page-content {
@@ -36,11 +37,13 @@ tr td,
   background-color: transparent !important;
 }
 
-#block-frontpagelogoheader a {
+#block-frontpagelogoheader a,
+.region-primary-menu .mobile-logo {
   color: transparent !important;
 }
 
-a {
+a,
+.link {
   color: #fafafa !important;
 }
 
@@ -51,7 +54,36 @@ mark {
   color: #ffcb05 !important;
 }
 
+.button {
+  background-color: #ffcb05 !important;
+  color: #00162a !important;
+}
+
 tr td,
 tr th {
   border-color: #333333 !important;
+}
+
+.chosen-container-single .chosen-single,
+.ui-widget-content,
+.chosen-container-multi .chosen-choices,
+input {
+  background-color: #00162a !important;
+  color: #fafafa !important;
+}
+
+#Thumbs_Up,
+#Thumbs_Down {
+  stroke: #ffcb05 !important;
+}
+
+.mgo-vote .voted .thumbs-down-svg,
+.mgo-vote .voted .thumbs-up-svg {
+  fill: #ffcb05 !important;
+}
+
+form.search-form .form-submit {
+  border-radius: 4px !important;
+  top: 3px !important;
+  width: 36px !important;
 }

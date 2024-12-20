@@ -1,3 +1,12 @@
+:root {
+  --box-shadow-color: rgba(0, 0, 0, 1);
+  --dark-color: #00162a;
+  --light-color: #fafafa;
+  --medium-dark-color: #333333;
+  --medium-color: #989c97;
+  --secondary-color: #ffcb05;
+}
+
 body,
 .page-content,
 #block-mgoblog-content .content,
@@ -16,9 +25,13 @@ tr,
 tr:nth-child(2n),
 tr td,
 .comments-filter h1,
-.comment__footer > .comment__user-data {
-  background-color: #00162a !important;
-  color: #fafafa !important;
+.comment__footer > .comment__user-data,
+.chosen-container-single .chosen-single,
+.ui-widget-content,
+.chosen-container-multi .chosen-choices,
+input {
+  background-color: var(--dark-color) !important;
+  color: var(--light-color) !important;
 }
 
 .views-row > .views-field-comment-count,
@@ -26,7 +39,7 @@ tr td,
 .view-secondary-articles .views-row .views-field-byline a,
 .sidebar .view .views-field-uid a,
 .node__meta {
-  color: #bababa !important;
+  color: var(--medium-color) !important;
 }
 
 .page-content {
@@ -44,46 +57,56 @@ tr td,
 
 a,
 .link {
-  color: #fafafa !important;
+  color: var(--light-color) !important;
 }
 
 .marker,
 .views-field-comment-count.views-field-new-comments a,
 a .marker,
 mark {
-  color: #ffcb05 !important;
+  color: var(--secondary-color) !important;
 }
 
 .button {
-  background-color: #ffcb05 !important;
-  color: #00162a !important;
+  background-color: var(--secondary-color) !important;
+  color: var(--dark-color) !important;
 }
 
 tr td,
 tr th {
-  border-color: #333333 !important;
+  border-color: var(--medium-dark-color) !important;
 }
 
-.chosen-container-single .chosen-single,
-.ui-widget-content,
-.chosen-container-multi .chosen-choices,
-input {
-  background-color: #00162a !important;
-  color: #fafafa !important;
+table tr th {
+  border-bottom-style: inherit !important;
 }
 
 #Thumbs_Up,
 #Thumbs_Down {
-  stroke: #ffcb05 !important;
+  stroke: var(--secondary-color) !important;
 }
 
 .mgo-vote .voted .thumbs-down-svg,
 .mgo-vote .voted .thumbs-up-svg {
-  fill: #ffcb05 !important;
+  fill: var(--secondary-color) !important;
 }
 
 form.search-form .form-submit {
   border-radius: 4px !important;
   top: 3px !important;
   width: 36px !important;
+}
+
+.sidebar .block,
+.content-wrapper,
+.thread-wrapper {
+  box-shadow: 4px 5px 10px -5px var(--box-shadow-color) !important;
+}
+
+.child {
+  border-color: var(--medium-color) !important;
+}
+
+.child:nth-child(2n) {
+  border-color: var(--secondary-color) !important;
 }

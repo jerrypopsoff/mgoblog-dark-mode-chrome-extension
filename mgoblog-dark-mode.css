@@ -29,7 +29,8 @@ tr td,
 .chosen-container-single .chosen-single,
 .ui-widget-content,
 .chosen-container-multi .chosen-choices,
-input {
+input,
+.tabs ul.primary li.is-active a {
   background-color: var(--dark-color) !important;
   color: var(--light-color) !important;
 }
@@ -67,7 +68,8 @@ mark {
   color: var(--secondary-color) !important;
 }
 
-.button {
+.button,
+.tabs ul.primary li a {
   background-color: var(--secondary-color) !important;
   color: var(--dark-color) !important;
 }
@@ -99,7 +101,9 @@ form.search-form .form-submit {
 
 .sidebar .block,
 .content-wrapper,
-.thread-wrapper {
+.thread-wrapper,
+.view-primary-articles .views-row,
+.view-secondary-articles .views-row {
   box-shadow: 4px 5px 10px -5px var(--box-shadow-color) !important;
 }
 
@@ -109,4 +113,13 @@ form.search-form .form-submit {
 
 .child:nth-child(2n) {
   border-color: var(--secondary-color) !important;
+}
+
+.tabs ul.primary li a {
+  text-shadow: none !important;
+}
+
+.tabs ul.primary li.is-active a {
+  border-bottom: none !important;
+  font-weight: bold;
 }
